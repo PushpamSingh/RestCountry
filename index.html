@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="simmer.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="font-['Nunito']">
+    <header class="shadow-xl">
+        <section class="flex items-center justify-between max-w-[1200px] mx-auto">
+            <h1 class="font-[800] text-[1.2rem] p-4">Where in the world?</h1>
+            <div class="flex items-center gap-2 border-2 border-gray-900 p-2 rounded-lg cursor-pointer mode">
+                <i class="light fa-regular fa-moon"></i>
+                <i class="dark fa-solid fa-moon hidden" style="color: #FFD43B;"></i>
+                <h3>Dark Mode</h3>
+            </div>
+        </section>
+    </header>
+
+    <Main class="max-w-[1200px] mx-auto">
+        <div class="p-6 flex justify-between searchAndfilter">
+            <div class="search shadow-3xl py-2 px-2 max-w-xs rounded-md">
+                <i class="fa-solid fa-magnifying-glass text-[#999] cursor-pointer"></i>
+                <input type="text" placeholder="Search for a country...." class="border-none outline-none p-2 placeholder:text-[#999]">
+            </div>
+            
+            <select name="" id="" class="border-none outline-none w-[250px] shadow-3xl rounded-md px-2 filter-by-region">
+                <option value="select region" hidden>Select region</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="America">America</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <div id="loader" class="hidden text-center my-6 text[1.5rem] text-[#555]">
+            <p>Loading...</p>
+        </div>
+        <section class="country-list max-w-[1200px] mx-auto p-6 flex gap-4 flex-wrap justify-between">
+           
+        </section>
+    </Main>
+</body>
+</html>
